@@ -1,0 +1,106 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://ik.imagekit.io/wifire/blog/wp-content/uploads/2024/08/20163428/preguntas-encuesta-satisfaccion.webp);
+  background-color: #1f324d;
+  background-blend-mode: overlay;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 , p {
+  width: 60vw;
+  max-width: 650px;
+  min-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+p {
+  margin: 15px auto;
+  font-size: 16px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+form {
+  width: 60vw;
+  max-width: 650px;
+  min-width: 300px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  background-color: #445368db;
+  border-radius: 10px;
+  border: 1px solid #435368;
+  box-shadow: 0 0 15px 0 #3f4d60;
+}
+
+fieldset {
+  margin: 15px 10px;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+/* USER DATA */
+fieldset[name="user-fieldset"] input {
+  display: block;
+  margin-top: 5px;
+  border: 0;
+  padding: 1px 2px; /* predeterminado */
+  width: calc(100% - 4px);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+fieldset[name="user-fieldset"] label:last-of-type input{
+  margin-bottom: 0;
+}
+/* DROPDOWN */
+fieldset[name="dropdown-fieldset"] select{
+  display: block;
+  margin-top: 10px;
+}
+
+/* RECOMMEND */
+fieldset[name="recommend-fieldset"] label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* CHECBOXES */
+fieldset[name="check-fieldset"] label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* COMMENT */
+fieldset[name="comments-fieldset"] textarea {
+  display: block;
+  margin-top: 10px;
+  border: 0;
+  padding: 1px 2px; /* predeterminado */
+  width: calc(100% - 4px);
+  resize: none;
+}
+
+/* SUBMIT */
+input[type="submit"] {
+  display: block;
+  margin: auto 24px;
+  width: calc(100% - 48px);
+  height: 4vh;
+  min-height: 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #32C837;
+  border: none;
+  border-radius: 2px;
+}
