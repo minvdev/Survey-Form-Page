@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Satisfaction Survey</h1>
+  <p id="description">Thank you for taking the time to help us</p>
+  <form action="#" id="survey-form" method="post">
+    <fieldset name="user-fieldset">
+      <label for="name" id="name-label">
+        Name
+        <input required type="text" id="name" name="name" placeholder="Enter your name" />
+      </label>
+      <label for="email" id="email-label">
+        Email
+        <input required type="email" id="email" name="email" placeholder="Enter your email" />
+      </label>
+      <label for="number" id="number-label">
+        Age (Optional)
+        <input type="number" id="number" name="number" min="13" max="120" placeholder="Age" />
+      </label>
+    </fieldset>
+    <fieldset name="dropdown-fieldset">
+      <label for="dropdown">
+        How did you hear about us?
+        <select required name="dropdown" id="dropdown">
+          <option value="">Select any option</option>
+          <option value="1">Social Media</option>
+          <option value="2">Advertising</option>
+          <option value="3">For a friend</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset name="recommend-fieldset">
+      <span class="legend">Would you recommend FreeCodeCamp to a friend?</span>
+      <label for="recommend-absolutely">
+        <input type="radio" name="recommend" id="recommend-absolutely" value="1" checked>
+        Absolutely
+      </label>
+      <label for="recommend-maybe">
+        <input type="radio" name="recommend" id="recommend-maybe" value="2">
+        Maybe
+      </label>
+      <label for="recommend-not-sure" class="last-label-of-fieldset">
+        <input type="radio" name="recommend" id="recommend-not-sure" value="3">
+        Not sure
+      </label>
+    </fieldset>
+    <fieldset name="check-fieldset">
+      <span class="legend">What do you use the most? (You can mark more than one)</span>
+      <label for="front-end">
+        <input type="checkbox" name="front-end" id="front-end" value="1">
+        Front-end
+      </label>
+      <label for="back-end">
+        <input type="checkbox" name="back-end" id="back-end" value="2">
+        Back-end
+      </label>
+      <label for="challenges">
+        <input type="checkbox" name="challenges" id="challenges" value="3">
+        Challenges
+      </label>
+      <label for="forums">
+        <input type="checkbox" name="forums" id="forums" value="4">
+        Forums
+      </label>
+      <label for="wiki">
+        <input type="checkbox" name="wiki" id="wiki" value="5">
+        Wiki
+      </label>
+      <label for="videos">
+        <input type="checkbox" name="videos" id="videos" value="6">
+        Videos
+      </label>
+    </fieldset>
+    <fieldset name="comments-fieldset">
+      <label for="additional-comments">
+        Add a comment or suggestion if you want!
+        <textarea rows="5" name="additional-comments" id="additional-comments"
+          placeholder="Anything we can improve"></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="Send" id="submit" />
+  </form>
+</body>
+
+</html>
